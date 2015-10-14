@@ -183,7 +183,7 @@ if __name__ == "__main__":
 
     # 2. Train a classifier
     #moidfy the args to accept a csv file
-    #nlc_instance.train_classifier(args.classifiername,training_file=args.csvfile)
+    nlc_instance.train_classifier(args.classifiername,training_file=args.csvfile)
 
 
     # 3. Get information on a specific classifier
