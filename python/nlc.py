@@ -171,6 +171,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("user", help="User Name")
     parser.add_argument("pw", help="Password")
+    parser.add_argument("csvfile", help="CSV file that will be used to generate the classifier (probably the training file generated from split.py)")
+    parser.add_argument("classifiername", help="Name of the classifier")
     args = parser.parse_args()
 
     # 1. Get classifiers information for a given user
@@ -181,7 +183,7 @@ if __name__ == "__main__":
 
     # 2. Train a classifier
     #moidfy the args to accept a csv file
-    # nlc_instance.train_classifier("{Classifier Name}",training_file='{CSV FILE NAME FROM extract.py}')
+    #nlc_instance.train_classifier(args.classifiername,training_file=args.csvfile)
 
 
     # 3. Get information on a specific classifier
